@@ -74,6 +74,7 @@ const PROJECTS = [
     tag: "Next.js · Full-Stack",
     desc: "A live developer-events platform built on Next.js 16 with email-based booking, featured events and a personal \u201cMy Events\u201d view. JWT auth with bcrypt-hashed passwords and admin/owner roles keeps moderation tight, Server Actions power create, edit, delete and booking cancellation, and rate limiting protects login, signup and event creation.",
     stack: ["Next.js 16", "MongoDB", "JWT", "Cloudinary", "PostHog", "Netlify"],
+    live: "https://dev-events-next-js.netlify.app/",
   },
   {
     name: "ExampleHR Time-Off Microservice",
@@ -511,6 +512,16 @@ export default function Portfolio() {
                     </span>
                   ))}
                 </div>
+                {p.live && (
+                  <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="pf-btn-ghost pf-press pf-mono mt-6 self-start rounded-md px-4 py-2 text-xs font-semibold inline-flex items-center gap-2"
+                  >
+                    Live <ArrowUpRight size={14} />
+                  </a>
+                )}
               </div>
             ))}
           </div>
