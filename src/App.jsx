@@ -42,11 +42,11 @@ const SECTIONS = [
 const SKILLS = [
   {
     group: "Frontend",
-    items: ["React.js", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "Razor / MVC Views"],
+    items: ["React.js", "Next.js (App Router)", "JavaScript (ES6+)", "TypeScript", "Tailwind CSS", "Razor / MVC Views"],
   },
   {
     group: "Backend",
-    items: ["Node.js", "NestJS", "Express", "ASP.NET Core MVC", "REST API Design"],
+    items: ["Node.js", "NestJS", "Express", "ASP.NET Core MVC", "REST API Design", "JWT & bcrypt Auth", "Server Actions"],
   },
   {
     group: "AI / ML",
@@ -58,7 +58,7 @@ const SKILLS = [
   },
   {
     group: "Engineering Practice",
-    items: ["Repository Pattern", "Idempotency & Locking", "Git", "Jest / Testing"],
+    items: ["Repository Pattern", "Idempotency & Locking", "Rate Limiting", "Git", "Jest / Testing", "Netlify Deployment"],
   },
 ];
 
@@ -68,6 +68,12 @@ const PROJECTS = [
     tag: "Final Year Project",
     desc: "A clinical decision-support system that detects bone fractures from X-rays using YOLOv8 for localization and CNN models for classification. Ships bilingual English/Urdu PDF reports so findings reach clinicians and patients alike.",
     stack: ["YOLOv8", "CNN", "Python", "React"],
+  },
+  {
+    name: "DevEvents",
+    tag: "Next.js · Full-Stack",
+    desc: "A live developer-events platform built on Next.js 16 with email-based booking, featured events and a personal \u201cMy Events\u201d view. JWT auth with bcrypt-hashed passwords and admin/owner roles keeps moderation tight, Server Actions power create, edit, delete and booking cancellation, and rate limiting protects login, signup and event creation.",
+    stack: ["Next.js 16", "MongoDB", "JWT", "Cloudinary", "PostHog", "Netlify"],
   },
   {
     name: "ExampleHR Time-Off Microservice",
@@ -96,6 +102,12 @@ const PROJECTS = [
 ];
 
 const JOURNEY = [
+  {
+    when: "Most Recent",
+    title: "DevEvents \u2014 shipped to production",
+    detail:
+      "Took a Next.js events app from idea to a live Netlify deployment: authentication and admin roles, event create/edit/delete, booking cancellation, rate limiting, analytics, and a separate dev database from production.",
+  },
   {
     when: "Final Year",
     title: "MedVision AI — FYP delivery",
